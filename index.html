@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey</title>
+  <!-- tailwind and daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-primary': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- custom styles -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-manrope">
+  <header class="md:container md:mx-auto">
+    <!-- navbar -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl lg:text-4xl">Hockey<span class="text-[FF4240]">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex mx-32">
+          <ul class="menu text-base menu-horizontal px-1">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="gap-6 ml-6">
+          <img src="Images/search.svg" alt="">
+          <button class="btn  bg-[#FF4240] text-white">Get Ticket</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider section -->
+    <!-- <div class="carousel w-full"> -->
+    <div class="carousel w-[335px] h-[200px] lg:w-full lg:h-[550px] ">
+      <!-- slide 1 -->
+
+      <!-- <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
+
+            </div> -->
+
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/1-2.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="Images/1-3.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <!-- dashed line -->
+    <div class="relative flex pt-20 items-center w-[335px] h-[1px] md:container md:mx-auto">
+      <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+      <div class="flex-grow border-t border-dashed border-gray-400"></div>
+    </div>
+
+    <!-- professional section -->
+    <section class="md:container md:mx-auto mb-24">
+      <div class="my-8">
+        <div class="md:w-full ">
+          <div class="flex flex-col lg:flex-col justify-center items-center text-[10px]  m-10">
+            <h3 class="text-4xl font-extrabold text-[#131318] text-center w-[292px] md:w-[500px]">
+              Professional Hockeys Club
+            </h3>
+            <p class="mt-6 text-center text-[16px] w-[292px] md:w-[607px]">
+              Elite hockey clubs epitomize top-tier competition, uniting skilled athletes, showcasing teamwork, and
+              fostering sportsmanship.
+            </p>
+          </div>
+        </div>
+        
+
+        <!-- dashed line -->
+        <div class="relative flex pt-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+          <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+          <div class="flex-grow border-t border-dashed border-gray-400"></div>
+        </div>
+
+        <!-- <div class="grid grid-cols-1 m-20 md:grid-cols-2 lg:grid-cols-4 gap-10"> -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-32">
+            <!-- segment 1 -->
+          <!-- <div class="card bg-base-100 p-9 ">
+            <figure><img class="w-36" src="Images/r.svg" alt="" /></figure>
+            <div class="card-body">
+              <div class="text-center space-y-3 mt-3">
+                <h4 class="text-bold text-[#131318] text-[20px]">Prayer Facility</h4>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="card bg-base-100 p-9">
+            <div class="bg-[url(Images/r.svg)] bg-no-repeat w-[120px] h-[120px]">
+              <h2 class=" text-center text-[#131318] font-extrabold text-[28px] p-10">87%</h2>
+              <div class="card-body flex justify-center items-center">
+                <div class="text-center space-y-3 mt-3">
+                  <h4 class="text-bold text-[#131318] text-[20px]">Player Facility</h4>
+                  <div class="w-[250px]">
+                    <p>Sacred space for communal prayer gatherings..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- segment 2 -->
+          <!-- <div class="card bg-base-100 p-9 ">
+            <figure><img class="w-36" src="Images/g.svg" alt="" /></figure>
+            <div class="card-body">
+              <div class="text-center space-y-3 mt-3">
+                <h4 class="text-bold text-[#131318] text-[20px]">Experienced Coach</h4>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="card bg-base-100 p-9">
+            <div class="bg-[url(Images/g.svg)] bg-no-repeat w-[120px] h-[120px]">
+              <h2 class=" text-center text-[#131318] font-extrabold text-[28px] p-10">95%</h2>
+              <div class="card-body flex justify-center items-center">
+                <div class="text-center space-y-3 mt-3">
+                  <h4 class="text-bold text-[#131318] text-[20px]">Experienced Coach</h4>
+                  <div class="w-[250px]">
+                    <p>Skilled mentor with extensive coaching expertise. .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- segment 3 -->
+          <!-- <div class="card bg-base-100 p-9 ">
+            <figure><img class="w-36" src="Images/y.svg" alt="" /></figure>
+            <div class="card-body">
+              <div class="text-center space-y-3 mt-3">
+                <h4 class="text-bold text-[#131318] text-[20px]">Senior Player</h4>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="card bg-base-100 p-9">
+            <div class="bg-[url(Images/y.svg)] bg-no-repeat w-[120px] h-[120px]">
+              <h2 class=" text-center text-[#131318] font-extrabold text-[28px] p-10">90%</h2>
+              <div class="card-body flex justify-center items-center">
+                <div class="text-center space-y-3 mt-3">
+                  <h4 class="text-bold text-[#131318] text-[20px]">Senior Player</h4>
+                  <div class="w-[250px]">
+                    <p>Athletic arena for skill development sessions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- segment 4 -->
+          <!-- <div class="card bg-base-100 p-9 ">
+            <figure><img class="w-36" src="Images/b.svg" alt="" /></figure>
+            <div class="card-body">
+              <div class="text-center space-y-3 mt-3">
+                <h4 class="text-bold text-[#131318] text-[20px]">Training Ground</h4>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="card bg-base-100 p-9">
+            <div class="bg-[url(Images/b.svg)] bg-no-repeat w-[120px] h-[120px]">
+              <h2 class=" text-center text-[#131318] font-extrabold text-[28px] p-10">80%</h2>
+              <div class="card-body flex justify-center items-center">
+                <div class="text-center space-y-3 mt-3">
+                  <h4 class="text-bold text-[#131318] text-[20px]">Training Ground</h4>
+                  <div class="w-[250px]">
+                    <p>The training ground serves as the dedicated space for honing skills</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dashed line -->
+    <div class="relative flex pt-20 items-center w-[335px] h-[1px] md:container md:mx-auto">
+      <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+      <div class="flex-grow border-t border-dashed border-gray-400"></div>
+    </div>
+
+    <!-- program section -->
+    <!-- <section class="mx-36 mb-32"> -->
+    <section class="md:container md:mx-auto">
+
+      <div class=" mt-8">
+        <!-- text div -->
+        <!-- <div class="flex flex-col justify-center items-center text-[10px] lg:justify-center lg:items-center"> -->
+        <div class="flex flex-col text-[10px] ">
+          <h3 class="text-4xl font-extrabold text-center">Program Sections</h3>
+          <p class="m-6 text-[16px] text-center">
+            Program sections categorize and organize key components for streamlined management.
+          </p>
+        </div>
+
+        <!-- dashed line -->
+        <div class="relative flex pt-8 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+          <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+          <div class="flex-grow border-t border-dashed border-gray-400"></div>
+        </div>
+
+        <!-- image div -->
+        <!-- <div class="grid gap-3  md:grid-cols-2 m-10 mx-5"> -->
+        <div class="grid gap-3  md:grid-cols-2 m-10 mx-5">
+          <!-- box 1 -->
+          <div>
+            <!-- <div class="w-full h-full bg-[url(Images/2.png)] bg-cover bg-center"> -->
+            <div class="w-[335px] h-[244px] md:h-[338px] md:w-full bg-[url(Images/2.png)] bg-cover bg-center rounded-2xl">
+              <div class="md:w-full md:h-full flex justify-center items-center backdrop-brightness-50 rounded-2xl">
+                <div class="text-white pl-10">
+                  <h1 class="mb-5 text-[28px] font-bold ">Junior Program</h1>
+                  <p class="mb-5">
+                    Tailored junior program fostering skill development and personal growth for young participants.
+                  </p>
+                  <button class="btn bg-[#FF4240] text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div>
+            <!-- <div class="w-full h-full bg-[url(Images/4.png)] bg-cover bg-center"> -->
+            <div class="w-[335px] h-[244px] md:h-[338px] md:w-full bg-[url(Images/3.png)] bg-cover bg-center rounded-2xl">
+              <div class="md:w-full md:h-full flex justify-center items-center backdrop-brightness-50 rounded-2xl">
+                <div class="text-white pl-10">
+                  <h1 class="mb-5 text-[28px] font-bold ">Teenager Program</h1>
+                  <p class="mb-5">
+                    Tailored program addressing teenagers' unique needs, fostering personal development and
+                    skill-building for a successful future.
+                  </p>
+                  <button class="btn bg-[#FF4240] text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="md:col-span-2">
+            <div class="w-[335px] h-[244px] md:h-[338px] md:w-full bg-[url(Images/4.png)] bg-cover bg-center rounded-2xl">
+              <div class="md:w-full md:h-full flex justify-center items-center backdrop-brightness-50 rounded-2xl">
+                <div class="text-white pl-10">
+                  <h1 class="mb-5 text-[28px] font-bold ">Professional Program</h1>
+                  <p class="mb-5 w-[277px] md:w-[520px]">
+                    Tailored program addressing teenagers' unique needs, fostering personal development and
+                    skill-building for a successful future.
+                  </p>
+                  <button class="btn bg-[#FF4240] text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- dashed line -->
+    <div class="relative flex pt-20 pb-8 items-center w-[335px] h-[1px] md:container md:mx-auto">
+      <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+      <div class="flex-grow border-t border-dashed border-gray-400"></div>
+    </div>
+
+    <!-- Our New Products section -->
+    <section class="mb-32 md:container md:mx-auto">
+      <!-- texts -->
+      <div class="flex flex-col justify-center items-center text-[10px] lg:flex-col m-10">
+        <h3 class="text-4xl font-extrabold text-[#131318] text-center">
+          Our New Products
+        </h3>
+        <p class="mt-6 text-center text-[16px]">
+          Explore our latest product offerings, showcasing innovation and quality for your needs.
+        </p>
+      </div>
+
+      <!-- dashed line -->
+      <div class="relative flex pt-8 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+        <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+        <div class="flex-grow border-t border-dashed border-gray-400"></div>
+      </div>
+
+      <!-- grids of cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+
+        <!-- card 1 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5 ">
+                <img src="Images/5.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">World Cup Flags Football</h2>
+              </div>
+              <div>
+                <p>
+                  World Cup flags add diversity, representing nations in global football.
+                </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- card 2 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5">
+                <img src="Images/6.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">World Cup Flags Football</h2>
+              </div>
+              <div>
+                <p>
+                  Flags tell unique stories, reflecting pride and identity of nations.
+                </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- card 3 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5">
+                <img src="Images/7.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">Cap For Hockeys</h2>
+              </div>
+              <div>
+                <p>Hockey caps offer style and protection, ideal for enthusiasts and players. </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- card 4 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5">
+                <img src="Images/8.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">World Cup Flags Football</h2>
+              </div>
+              <div>
+                <p>
+                  Fans create spirited atmosphere, waving flags, transcending borders in football.
+                </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- card 5 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5">
+                <img src="Images/9.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">World Cup Flags Football</h2>
+              </div>
+              <div>
+                <p>
+                  Flag ceremony embodies fair play, symbolizing friendly global competition spirit.
+                </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- card 6 -->
+        <div>
+
+          <div class="flex flex-col md:flex-row rounded-lg">
+            <div class="">
+              <figure class="py-5 pl-5">
+                <img src="Images/10.png" alt="" class="rounded-xl" />
+              </figure>
+            </div>
+
+            <!-- <div class="card-body items-center text-center"> -->
+            <div class="card-body gap-4">
+              <div class="flex gap-2">
+                <div class="flex">
+                  <img src="Images/star.png" alt="">
+                  <p>5.0</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/eye.png" alt="">
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <img src="Images/heart.png" alt="">
+                  <p>200</p>
+                </div>
+              </div>
+              <div>
+                <h2 class="card-title text-[#131318] font-extrabold text-[20px]">World Cup Flags Football</h2>
+              </div>
+              <div>
+                <p>
+                  Players proudly wear national colors, turning flags into symbols of celebration
+                </p>
+              </div>
+              <div class="card-actions">
+                <div>
+                  <h3 class="text-[#FF4240] text-[18px] font-extrabold">Price - $22.00</h3>
+                </div>
+                <div class="flex">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p>Delivery Fee : Free</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- dashed line -->
+    <div class="relative flex p-25 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+      <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+      <div class="flex-grow border-t border-dashed border-gray-400"></div>
+    </div>
+
+    <!-- Clients Question -->
+    <section class="md:container md:mx-auto">
+      <div class="mb-12">
+        <h3 class="text-4xl mb-6 font-extrabold text-[#131318] text-center">
+          Clients Question
+        </h3>
+        <p class="text-center text-[16px] justify-center">
+          Client's question addresses specific inquiry; seeking concise and clear information .
+        </p>
+      </div>
+
+      <!-- dashed line -->
+      <div class="relative flex pt-8 pb-12 items-center w-[335px] h-[1px] md:container md:mx-auto">
+        <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+        <div class="flex-grow border-t border-dashed border-gray-400"></div>
+      </div>
+
+      <!-- <div class="hero min-h-screen"> -->
+      <div class="py-8 pl-8">
+        <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+          <img src="Images/11.png" class="w-[287px] h-[180px] lg:w-[441px] lg:h-[470px] rounded-lg" />
+          <div>
+            <!-- first question -->
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Our equipment refers to the gear and tools used in a particular context or activity, tailored to meet
+                  specific needs or requirements.
+                </p>
+              </div>
+            </div>
+            <!-- second question -->
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p>Hockey training maximizes player skills, endurance, and teamwork through on-ice drills, off-ice
+                  conditioning, and strategic sessions for peak performance.
+                </p>
+              </div>
+            </div>
+            <!-- third question -->
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Tailored private hockey lessons provide personalized coaching, accelerating skill development for
+                  individual players.
+                </p>
+              </div>
+            </div>
+            <!-- fourth question -->
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Ski Touring
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Ski touring involves skiing uphill and downhill on varied terrain, combining elements of skiing and
+                  hiking for a challenging and rewarding outdoor experience.
+                </p>
+              </div>
+            </div>
+            <!-- fifth question -->
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Booking
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Booking facilitates reservations or appointments, streamlining the process of securing services or
+                  resources in advance.
+                </p>
+              </div>
+            </div>
+            <!-- sixth question -->
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold text-[#131318]">
+                Pricings
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Pricing varies based on factors such as features, quantity, or duration, determining the cost of
+                  products or services offered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dashed line -->
+    <div class="relative flex pt-20 pb-8 items-center w-[335px] h-[1px] md:container md:mx-auto">
+      <!-- <div class="flex-grow border-t border-dashed border-gray-400"></div> -->
+      <div class="flex-grow border-t border-dashed border-gray-400"></div>
+    </div>
+
+    <!-- Get In Touch section -->
+    <section class="md:container md:mx-auto">
+
+      <div class="grid gap-3  md:grid-cols-2 m-10 mx-5">
+        <div class="md:col-span-2 h-24">
+          <h3 class="text-4xl text-[131318] font-extrabold text-center mb-6">
+            Get In Touch
+          </h3>
+          <p class="text-center">
+            Connect with us for inquiries, assistance, or collaboration opportunities. Reach out!.
+          </p>
+        </div>
+        <div class="p-12 h-[764px]">
+          <!-- card container -->
+          <div class="grid grid-cols-1 gap-6">
+            <!-- touch card 1 -->
+            <div>
+              <div class="bg-[#BCED6D1A] w-[287px] h-[184px] md:container md:mx-auto md:h-[216px] rounded-lg">
+                <div class="">
+                  <figure class="pt-8 pl-8">
+                    <img src="Images/g call.png" alt="" class="rounded-xl" />
+                  </figure>
+                </div>
+                <div class="card-body gap-4">
+
+                  <div>
+                    <p class="text-[16px]">
+                      Phone Number :
+                    </p>
+                  </div>
+                  <div>
+                    <h2 class="card-title text-[#131318] font-extrabold text-[18px]">
+                      (+62) 123-321-543
+                    </h2>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <!-- touch card 2 -->
+            <div>
+              <div class="bg-[#FDDD5F1A] w-[287px] h-[184px] md:container md:mx-auto md:h-[216px] rounded-lg">
+                <div class="">
+                  <figure class="pt-8 pl-8">
+                    <img src="Images/message.png" alt="" class="rounded-xl" />
+                  </figure>
+                </div>
+                <div class="card-body gap-4">
+
+                  <div>
+                    <p class="text-[16px]">
+                      Email :
+                    </p>
+                  </div>
+                  <div>
+                    <h2 class="card-title text-[#131318] font-extrabold text-[18px]">
+                      hockeys@support.com
+                    </h2>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <!-- touch card 3 -->
+            <div>
+              <div class="bg-[#629CF31A] w-[287px] h-[216px] md:container md:mx-auto md:h-[216px] rounded-lg">
+                <div class="">
+                  <figure class="pt-8 pl-8">
+                    <img src="Images/location.png" alt="" class="rounded-xl" />
+                  </figure>
+                </div>
+                <div class="card-body gap-4">
+
+                  <div>
+                    <p class="text-[16px]">
+                      Location :
+                    </p>
+                  </div>
+                  <div>
+                    <h2 class="card-title text-[#131318] font-extrabold text-[18px]">
+                      152/1 Mohakhali Wireless Gate
+                    </h2>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- form -->
+        <!-- form container -->
+        <div class="grid grid-cols-1 gap-6 h-[858px] md:h-[764px] ">
+          <!-- form 1 -->
+          <div>
+            <div class="flex flex-col lg:flex-row gap-6">
+              <!-- Your Name -->
+              <!-- <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"> -->
+              <div class="">
+                <label for="name" class="block text-[20px] font-bold text-[#131318]">Your Name</label>
+                <div class="mt-4">
+                  <!-- <input type="text" name="first-name" id="first-name" placeholder="Enter your full name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"> -->
+                  <input type="text" name="name" id="name" placeholder="Enter your full name" autocomplete="family-name"
+                    class="bg-[#13131808] block w-[324px] h-[64px] rounded-xl border-0 py-5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-[16px] sm:leading-6">
+                </div>
+              </div>
+              <!-- Your Email -->
+              <!-- <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"> -->
+              <div class="">
+                <label for="email" class="block text-[20px] font-bold text-[#131318]">Your Email</label>
+                <div class="mt-4">
+                  <!-- <input type="text" name="first-name" id="first-name" placeholder="Enter your full name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"> -->
+                  <input type="text" name="email" id="email" placeholder="Enter your email" autocomplete="family-email"
+                    class="bg-[#13131808] block w-[324px] h-[64px] rounded-xl border-0 py-5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-[16px] sm:leading-6">
+                </div>
+              </div>
+
+            </div>
+            <!-- form 2 -->
+            <div class="my-6 flex flex-col md:flex-col lg:flex-row gap-6">
+
+              <!-- subject -->
+              <div class="">
+                <label for="Subject" class="block text-[20px] font-bold text-[#131318]">Subject</label>
+                <div class="mt-4">
+                  <input type="text" name="Subject" id="Subject" placeholder="Enter your subject"
+                    autocomplete="related-subject"
+                    class="bg-[#13131808] block w-[324px] h-[64px] rounded-xl border-0 py-5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-[16px] sm:leading-6">
+                </div>
+              </div>
+              <!-- Phone Number -->
+              <div class="">
+                <label for="Phone Number" class="block text-[20px] font-bold text-[#131318]">Phone Number</label>
+                <div class="mt-4">
+                  <input type="Phone Number" name="Phone Number" id="Phone Number" placeholder="Enter your phone number"
+                    autocomplete="family-Phone-Number"
+                    class="bg-[#13131808] block w-[324px] h-[64px] rounded-xl border-0 py-5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-[16px] sm:leading-6">
+                </div>
+              </div>
+
+            </div>
+            <!-- form 3 -->
+            <div>
+              <!-- Message -->
+              <div class="my-6">
+                <label for="Message" class="block text-[20px] font-bold text-[#131318]">Message</label>
+                <div class="mt-4">
+                  <input type="text" name="Message" id="Message" placeholder="Write your message"
+                    autocomplete="related-subject"
+                    class="bg-[#13131808] block w-[335px] h-[200px] md:w-[672px] md:h-[370px] rounded-xl border-0 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-[16px] sm:leading-6">
+                </div>
+              </div>
+            </div>
+            <!-- send message -->
+            <div class="">
+              <button>
+                <div class="bg-[#FF4240] rounded-lg w-[335px] md:w-[672px]">
+                  <h4 class="text-center text-[20px] text-[#FFF] font-bold p-2">Send Message</h4>
+                </div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- social -->
+        <div class="bg-[#13131808] rounded-lg md:col-span-2 w-[335px] md:container md:mx-auto ">
+          <div class="p-8">
+            <h4 class="text-[24px] font-extrabold text-[#131318] text-center mb-6">Social Media</h4>
+            <div class="flex justify-center items-center">
+              <img src="Images/Social.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="mt-24">
+    <div class="md:container md:mx-auto grid  footer px-32 pb-32 pt-24 bg-[#131318] text-neutral-content w-[335px] h-[869px] md:w-[1440px] md:h-[454px]">
+      <aside class="gap-5">
+        <div>
+          <h3 class="font-extrabold text-[#FFF] text-[28px]">Get In Touch</h3>
+        </div>
+        <div class="">
+          <p class="w-[230px] md:w-[346px]">
+            Feel free to contact us with any questions, inquiries, or collaboration opportunities. We welcome your
+            communication.
+          </p>
+        </div>
+        <div class="flex gap-4">
+          <img src="Images/ft msg.png" alt="">
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="Images/ft call.png" alt="">
+          <p>(+62) 123-321-543</p>
+        </div>
+      </aside>
+      <nav>
+        <header class=" font-bold text-[#FFFFFF] text-[18px]">Company</header>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">About us</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Leadership</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Careers</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">News & Article</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Legal Notice</a>
+      </nav>
+      <nav>
+        <header class="font-bold text-[#FFFFFF] text-[18px]">Support</header>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Help Center</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">FAQ</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Ticket Support</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Contact Us</a>
+      </nav>
+      <nav>
+        <header class="font-bold text-[#FFFFFF] text-[18px]">Services</header>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Academy</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Private Lesson</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Hockeys for kids</a>
+        <a class="link link-hover text-[#FFFFFF99] text-[16px]">Hockeys for Adult</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
