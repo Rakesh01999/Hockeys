@@ -1,2 +1,2 @@
 ## Hockeys 
-A simple web page 
+A simple(basic) web page 
